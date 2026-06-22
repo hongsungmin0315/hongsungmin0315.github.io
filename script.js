@@ -51,4 +51,18 @@
     );
     update();
   }
+
+  // Live clock (KST) — subtle telemetry detail
+  var clock = document.getElementById("clock");
+  if (clock) {
+    var pad = function (n) { return n < 10 ? "0" + n : "" + n; };
+    var tick = function () {
+      // KST = UTC+9, derived from UTC so it is correct regardless of viewer TZ
+      var now = new Date();
+      var k = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000);
+      clock.textContent = pad(k.getHours()) + ":" + pad(k.getMinutes()) + ":" + pad(k.getSeconds()) + " KST";
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
 })();
