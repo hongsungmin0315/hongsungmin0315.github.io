@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홍성민 — Curriculum Vitae</title>
+  <meta name="description" content="홍성민 이력서 · Curriculum Vitae" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a class="nav__mark" href="#top">HSM</a>
+    <nav class="nav__links">
+      <a href="#about">01&nbsp;About</a>
+      <a href="#experience">02&nbsp;Experience</a>
+      <a href="#skills">03&nbsp;Skills</a>
+      <a href="#projects">04&nbsp;Projects</a>
+      <a href="#contact">05&nbsp;Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <p class="overline reveal">Curriculum Vitae · Est. 2026</p>
+      <h1 class="hero__name reveal">홍성민<span class="hero__cursor"></span></h1>
+      <p class="hero__title reveal">Software Engineer</p>
+      <p class="hero__lede reveal">정밀함과 절제 사이에서 오래 가는 것을 만듭니다.</p>
+      <div class="hero__meta reveal" aria-hidden="true">
+        <span>37.5665° N</span><span>126.9780° E</span><span>SEOUL · KR</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__no">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about reveal">
+        <p class="about__lead">
+          간결한 한 줄 소개를 여기에 적습니다. 어떤 가치를 추구하고
+          어떤 문제를 푸는 사람인지 압축해 보여주세요.
+        </p>
+        <p class="about__body">
+          두세 문장의 자기소개 문단입니다. 경력의 맥락, 관심 분야,
+          일하는 방식 등을 담아 자연스럽게 풀어 쓰면 됩니다. 이 텍스트는
+          <code>index.html</code>에서 바로 수정할 수 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <span class="section__no">02</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <ul class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__period"><span>2024</span><span class="timeline__dash">—</span><span>현재</span></div>
+          <div class="timeline__body">
+            <h3 class="timeline__role">직무 / 직책</h3>
+            <p class="timeline__org">회사명 · 소속 팀</p>
+            <ul class="timeline__points">
+              <li>핵심 성과나 책임을 한 줄로 적습니다.</li>
+              <li>가능하면 수치로 임팩트를 표현하세요.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__period"><span>2022</span><span class="timeline__dash">—</span><span>2024</span></div>
+          <div class="timeline__body">
+            <h3 class="timeline__role">직무 / 직책</h3>
+            <p class="timeline__org">회사명 · 소속 팀</p>
+            <ul class="timeline__points">
+              <li>주요 프로젝트와 기여를 적습니다.</li>
+              <li>사용한 기술과 결과를 함께 기록하세요.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <span class="section__no">03</span>
+        <h2 class="section__title">Skills</h2>
+      </div>
+      <div class="skills reveal">
+        <div class="skills__group">
+          <h3 class="skills__label">Languages</h3>
+          <ul class="skills__list">
+            <li>TypeScript</li><li>Python</li><li>Go</li><li>Java</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__label">Frameworks</h3>
+          <ul class="skills__list">
+            <li>React</li><li>Node.js</li><li>Spring</li><li>FastAPI</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__label">Infra & Tools</h3>
+          <ul class="skills__list">
+            <li>AWS</li><li>Docker</li><li>Kubernetes</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <span class="section__no">04</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <div class="projects">
+        <a class="project reveal" href="#">
+          <div class="project__top">
+            <h3 class="project__name">프로젝트 이름</h3>
+            <span class="project__arrow">↗</span>
+          </div>
+          <p class="project__desc">한 줄 설명. 무엇을 만들었고 왜 만들었는지 적습니다.</p>
+          <div class="project__tags"><span>Stack</span><span>Stack</span></div>
+        </a>
+        <a class="project reveal" href="#">
+          <div class="project__top">
+            <h3 class="project__name">프로젝트 이름</h3>
+            <span class="project__arrow">↗</span>
+          </div>
+          <p class="project__desc">한 줄 설명. 핵심 기능과 임팩트를 적습니다.</p>
+          <div class="project__tags"><span>Stack</span><span>Stack</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head reveal">
+        <span class="section__no">05</span>
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <div class="contact reveal">
+        <p class="contact__lead">함께 만들 일이 있다면 언제든 연락 주세요.</p>
+        <ul class="contact__links">
+          <li><a href="mailto:homg0315@gmail.com">homg0315@gmail.com</a></li>
+          <li><a href="https://github.com/hongsungmin0315" target="_blank" rel="noopener">github.com/hongsungmin0315</a></li>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 홍성민</span>
+    <span class="footer__mono">DESIGNED &amp; BUILT IN SEOUL</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
